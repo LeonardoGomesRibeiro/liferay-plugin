@@ -2,8 +2,7 @@
 <!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.2.0//EN" "http://www.liferay.com/dtd/liferay-display_6_2_0.dtd">
 
 <display>
-	<category name="category.sample">
+	<category name="Liferay">
 		<portlet id="managephones-portlet" />
-		<portlet id="manage-phones"></portlet>
 	</category>
 </display>
