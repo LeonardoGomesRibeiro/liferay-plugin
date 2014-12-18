@@ -13,7 +13,8 @@
 	<%
 		MBMobilePhone mobilePhone = null;
 		long mobilePhoneId = ParamUtil.getLong(request, "id");
-	    if (mobilePhoneId > 0) {
+	    // if the id exist, we are editing.
+		if (mobilePhoneId > 0) {
 	    	mobilePhone = MBMobilePhoneLocalServiceUtil.getMBMobilePhone(mobilePhoneId);
 	    }
 	    String currentUrl = ParamUtil.getString(request, "currentUrl");
@@ -27,7 +28,7 @@
 
 	<liferay-ui:header
 	    backURL="<%= viewMobilePhoneURL %>"
-	   title='<%= (mobilePhone != null) ? mobilePhone.getName() : "New Mobile" %>'
+	   title='<%= (mobilePhone != null) ? "Edit " + mobilePhone.getName() : "New Mobile" %>'
 	/>
 	<aui:form action="<%= editMobilePhoneURL %>" method="POST" name="fm">
     

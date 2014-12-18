@@ -24,6 +24,7 @@
 <%@ taglib uri="http://liferay.com/tld/theme" prefix="liferay-theme" %>
 
 <portlet:defineObjects />
+
 <liferay-theme:defineObjects />
 
 <%
@@ -45,7 +46,7 @@
 		value="Add Mobile Phone" />
 </aui:button-row>
 
-<liferay-ui:search-container emptyResultsMessage="No mobile phones">
+<liferay-ui:search-container delta="10" emptyResultsMessage="No mobile phones">
     <liferay-ui:search-container-results
         results="<%= MBMobilePhoneLocalServiceUtil.getMBMobilePhones(searchContainer.getStart(), searchContainer.getEnd()) %>"
         total="<%= MBMobilePhoneLocalServiceUtil.getMBMobilePhonesCount() %>"
