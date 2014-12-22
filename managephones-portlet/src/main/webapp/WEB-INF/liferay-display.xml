@@ -4,5 +4,6 @@
 <display>
 	<category name="Liferay">
 		<portlet id="managephones-portlet" />
+		<portlet id="manage-phones"></portlet>
 	</category>
 </display>
